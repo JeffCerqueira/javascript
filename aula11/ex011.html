@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+</head>
+<body>
+    <h1>Bem vindo ao Brasil</h1>
+    De onde Você é ? <input type="text" name="txtNacionalidade" id="txtNacionalidade">
+    <input type="button" value="buscar" onclick="verificar()">
+    <div id="res">
+
+    </div>
+    <script>
+        function verificar() {
+            var txtnacionalidade = document.getElementById('txtNacionalidade')
+            var nacionalidade = txtnacionalidade.value
+            res = document.querySelector('div#res')
+            res.innerHTML = `<p>Bem vindo residente do ${nacionalidade}</p>`
+            if (nacionalidade == 'Brasil') {
+                res.innerHTML += '<p>Você é Brasileiro</p>'
+            } else {
+                res.innerHTML += '<p>Você é estrangeiro, seja bem vindo !<p/>'
+            }
+        }
+        
+    </script>
+</body>
+</html>
