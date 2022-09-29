@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hora do Dia</title>
+    <style>
+        h1 {
+            text-align: center;
+        }
+        div#principal {
+            border-radius: 10px;
+            height: 300px;
+            width: 400px;
+            background-color: aqua;
+            box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.425);
+        }
+    </style>
+</head>
+<body>
+    <h1>Hora do Dia</h1>
+    <div id="principal">
+        
+    </div>
+    <script>
+        var agora = new Date()
+        var horario = agora.getHours()
+        var div = window.document.getElementById('principal')
+        if (horario > 0 && horario < 12) {
+            
+        }
+
+    </script>
+</body>
+</html>
